@@ -28,8 +28,11 @@ app.use("/api/cart", cartRouter)
 app.use("/api/order",orderRouter)
 app.use("/api/blog",blogRouter)
 
-app.get("/", (req, res) => {
-    res.send("API Working")
+app.get("/", async (req, res, next) => {
+  return res.status(200).json({
+    title: "Express Testing",
+    message: "The app is working properly!",
   });
+});
 
 app.listen(port, () => console.log(`Server started on http://localhost:${port}`))
