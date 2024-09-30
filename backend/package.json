@@ -4,8 +4,13 @@
   "description": "",
   "type": "module",
   "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "start" : "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
