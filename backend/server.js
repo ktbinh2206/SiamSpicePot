@@ -27,9 +27,6 @@ app.use("/images",express.static('uploads'))
 app.use("/api/cart", cartRouter)
 app.use("/api/order",orderRouter)
 app.use("/api/blog",blogRouter)
-app.get('/', (req, res) => {
-  res.send('Hello');
-});
 
 app.get("/", (req, res) => {
     res.send("API Working")
